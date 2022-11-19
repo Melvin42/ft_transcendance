@@ -1,0 +1,39 @@
+.Pong {
+	background-color: #111111;
+	width: 800px;
+	height: 400px;
+	border: 3px #f54000 solid;
+}
+
+.boardPong {
+	display: flex;
+	flex-direction: row;
+}
+
+.paddle1 {
+	position: relative;
+	left: 0px;
+	top: 50%;
+	width: 10px;
+	height: 150px;
+	background-color: white;
+}
+
+.paddle2 {
+	position: relative;
+	left: 755px;
+	top: 50%;
+	width: 10px;
+	height: 150px;
+	background-color: white;
+}
+
+.ball {
+	position: relative;
+	left: 50%;
+	top: 50%;
+	width: 25px;
+	height: 25px;
+	background-color: #f54000;
+	border-radius: 50%;
+}

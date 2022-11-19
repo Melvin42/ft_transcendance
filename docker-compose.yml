@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+    nest:
+        build: ./nest/
+        volumes:
+            - db_nest:/home
+    react:
+        build: ./react/
+        volumes:
+            - db_react:/home
+
+volumes:
+    db_nest:
+        driver: local
+        driver_opts:
+            type: none
+            device: /mnt/nfs/homes/melperri/rest_practice/data/nest_data
+            o: bind
+    db_react:
+        driver: local
+        driver_opts:
+            type: none
+            device: /mnt/nfs/homes/melperri/rest_practice/data/react_data
+            o: bind
